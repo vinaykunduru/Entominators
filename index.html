@@ -97,8 +97,9 @@
               <div class="others-options d-flex align-items-center">
                 <div class="option-item">
                   <a
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
                     class="default-btn"
                     >Let’s Talk <i class="ri-message-line"></i><span></span
                   ></a>
@@ -163,6 +164,8 @@
               <div class="banner-btn">
                 <a
                   href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalCenter"
                   class="default-btn wow fadeInRight"
                   data-wow-delay="200ms"
                   data-wow-duration="1000ms"
@@ -308,7 +311,11 @@
                 </ul>
 
                 <div class="experiences-btn">
-                  <a href="#" class="default-btn"
+                  <a
+                    href="#"
+                    class="default-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
                     >Read More <i class="ri-arrow-right-line"></i><span></span
                   ></a>
                 </div>
@@ -514,7 +521,11 @@
             <li>Transparent Pricing</li>
             <li>Post-Treatment Cleaning Available</li>
           </ul>
-          <a href="#" class="default-btn"
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter"
+            class="default-btn"
             >Explore Now <i class="ri-arrow-right-line"></i
           ></a>
         </div>
@@ -698,7 +709,13 @@
             </p>
 
             <div class="overview-btn">
-              <a href="#" class="overview-btn-one">Get Protected Today</a>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalCenter"
+                class="overview-btn-one"
+                >Get Protected Today</a
+              >
               <img src="assets/images/overview/bar.png" alt="image" />
             </div>
           </div>
@@ -747,7 +764,7 @@
 
                 <li>
                   <i class="ri-global-line"></i>
-                  <a href="mailto:hello.me@lifemine.io"
+                  <a href="mailto:info@entominators.com"
                     >info@entominators.com</a
                   >
                 </li>
@@ -885,66 +902,31 @@
       <i class="ri-arrow-up-s-line"></i>
     </div>
     <!-- End Go Top Area -->
-
-    <!-- Jquery Slim JS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Bootstrap Bundle JS -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Meanmenu JS -->
-    <script src="assets/js/jquery.meanmenu.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- Jquery Appear JS -->
-    <script src="assets/js/jquery.appear.js"></script>
-    <!-- Odometer JS -->
-    <script src="assets/js/odometer.min.js"></script>
-    <!-- Nice Select JS -->
-    <script src="assets/js/nice-select.min.js"></script>
-    <!-- Magnific Popup JS -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Fancybox JS -->
-    <script src="assets/js/fancybox.min.js"></script>
-    <!-- TweenMax JS -->
-    <script src="assets/js/TweenMax.min.js"></script>
-    <!-- Scrollbar JS -->
-    <script src="assets/js/scrollbar.min.js"></script>
-    <!-- Horizontal Scrollbar JS -->
-    <script src="assets/js/horizontal-scrollbar.min.js"></script>
-    <!-- Ajaxchimp JS -->
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <!-- Form Validator JS -->
-    <script src="assets/js/form-validator.min.js"></script>
-    <!-- Contact JS -->
-    <script src="assets/js/contact-form-script.js"></script>
-    <!-- Wow JS -->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/main.js"></script>
-
     <!-- Modal -->
     <div
-      class="modal fade show"
+      class="modal fade"
       id="exampleModalCenter"
       tabindex="-1"
-      role="dialog"
       aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Request a Free Inspection
+            </h5>
             <button
               type="button"
               class="close"
-              data-dismiss="modal"
+              data-bs-dismiss="modal"
               aria-label="Close"
             >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form id="contactForm" novalidate="true">
+            <form id="contactForm" novalidate="true" class="contact-form">
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                   <div class="form-group has-error">
@@ -984,7 +966,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-12 col-md-12">
                   <div class="form-group">
                     <input
                       type="text"
@@ -999,7 +981,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6">
+                <!-- <div class="col-lg-6 col-md-6">
                   <div class="form-group">
                     <input
                       type="text"
@@ -1012,7 +994,7 @@
                     />
                     <div class="help-block with-errors"></div>
                   </div>
-                </div>
+                </div> -->
 
                 <div class="col-lg-12 col-md-12">
                   <div class="form-group">
@@ -1045,18 +1027,43 @@
               </div>
             </form>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
         </div>
       </div>
     </div>
+    <!-- Jquery Slim JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Jquery Appear JS -->
+    <script src="assets/js/jquery.appear.js"></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="assets/js/fancybox.min.js"></script>
+    <!-- TweenMax JS -->
+    <script src="assets/js/TweenMax.min.js"></script>
+    <!-- Scrollbar JS -->
+    <script src="assets/js/scrollbar.min.js"></script>
+    <!-- Horizontal Scrollbar JS -->
+    <script src="assets/js/horizontal-scrollbar.min.js"></script>
+    <!-- Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
